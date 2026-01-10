@@ -83,7 +83,66 @@ int main(){
 
     // -----------chapter-4(loop control instructions)------------
 
-    
+    // int n;
+    // do{
+    //     printf("enter a new num: ");
+    //     scanf("%d",&n);
+
+    //     if(n%7==0){
+    //         break;
+    //     }
+    // }while(1);
+    // printf("End");
+
+    // int i;
+    // for(i=1;i<=10;i++){
+    //     if(i==3){
+    //         continue;//skip it
+    //     }
+    //     printf("%d",i);
+    // }
+
+    // int i,j;
+    // for(i=1;i<=4;i++){
+    //     for (j=1;j<=5;j++){
+    //         printf("*");
+    //     }
+    //     printf("\n");
+    // }
+
+    // int num,c=0;
+    // printf("enter a num: ");
+    // scanf("%d",&num);
+    // for(int i=1;i<=num;i++){
+        
+    //     int rem=num%i;
+    //     if(rem==0){
+    //         // printf("%d",i);
+    //         c += 1;
+            
+    //     }
+    // }
+    // if(c==2){
+    //     printf("Num is prime");
+    // }else{
+    //     printf("Num is composite");
+    // }
+
+    int n,c=0;
+    printf("enter a num: ");
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=i;j++){
+            int r=i%j;
+            if(r==0){
+                c+=1;
+            }
+        }
+        if(c==2){
+                printf("%d\n",i);
+        }
+        c=0;
+    }
 
     return 0;
 
