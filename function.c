@@ -8,7 +8,12 @@ void circle();
 
 int sumNatural(int n);
 void prntHW(int n);
-void fibonacci();
+int fib(int n);
+
+int sod(int n);
+float sqrRT(int n);
+void temp(float t);
+int power(int n, int p);
 
 int main(){
     // int a,b,s;
@@ -33,15 +38,33 @@ int main(){
     // prod(a,b);
 
     //-------recursive function-------------
-
     // prntHW(5);
 
     // printf("sum of number to 5 is: %d",sumNatural(5));
-
-    
+    // int n;
+    // printf("enter a num: ");
+    // scanf("%d",&n);
+    // printf("%d",fib(n));
+    //------------------------------------------
+    // int n;
+    // printf("enter a num: ");
+    // scanf("%d",&n);
+    // printf("sum of digits of a num is %d \n",sod(n));
+    // printf("square root of given num is %f",sqrRT(n));
+    // float t;
+    // printf("enter the temperature on celsius: ");
+    // scanf("%f",&t);
+    // temp(t);
+    // int n,p;
+    // printf("enter a num: ");
+    // scanf("%d",&n);
+    // printf("enter the num for power: ");
+    // scanf("%d",&p);
+    // printf("the power of %d to %d is %d",n,p,power(n,p));
 
     return 0;
 }
+
 int sum(int x,int y){//formal parameter/parameter
     return x+y;
 }
@@ -88,4 +111,44 @@ int sumNatural(int n){
     int sumN=sumNm1+n;
     return sumN;
 }
+int fib(int n){
+    if(n==0){
+        return 0;
+    }
+    if(n==1){
+        return 1;
+    }
+    int fibNm1 = fib(n-1);
+    int fibNm2 = fib(n-2);
+    int fibN=fibNm1+fibNm2;
+    return fibN;
+}
 
+int sod(int n){
+    int a = n,c;
+    while(a!=0){
+        int r = a%10;
+        c=c+r;
+        a=a/10;
+    }
+    return c;
+}
+float sqrRT(int n){
+    float sq = sqrt(n);
+    return sq;
+}
+void temp(float t){
+    if(t>=20){
+    printf("the temp is high.");
+    }else{
+    printf("the temp is cold.");
+    }
+    return;
+}
+int power(int n,int p){
+    int m = n;
+    for(int i = 1;i<p;i++){
+    n=n*m;
+    }
+    return n;
+}

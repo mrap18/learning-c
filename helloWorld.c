@@ -128,21 +128,23 @@ int main(){
     //     printf("Num is composite");
     // }
 
-    int n,c=0;
-    printf("enter a num: ");
-    scanf("%d",&n);
-    for(int i=1;i<=n;i++){
-        for(int j=1;j<=i;j++){
-            int r=i%j;
-            if(r==0){
-                c+=1;
-            }
-        }
-        if(c==2){
-                printf("%d\n",i);
-        }
-        c=0;
-    }
+    // int n,c=0;
+    // printf("enter a num: ");
+    // scanf("%d",&n);
+    // for(int i=1;i<=n;i++){
+    //     for(int j=1;j<=i;j++){
+    //         int r=i%j;
+    //         if(r==0){
+    //             c+=1;
+    //         }
+    //     }
+    //     if(c==2){
+    //             printf("%d\n",i);
+    //     }
+    //     c=0;
+    // }
+
+    //---------------------chapter-6(pointers)------------------------
 
     return 0;
 
