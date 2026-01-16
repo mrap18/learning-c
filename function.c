@@ -38,7 +38,7 @@ int main(){
 
     // printf("sum of number to 5 is: %d",sumNatural(5));
 
-
+    
 
     return 0;
 }
